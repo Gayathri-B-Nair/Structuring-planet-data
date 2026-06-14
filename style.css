@@ -1,0 +1,79 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+/* TITLE */
+h1 {
+  margin-bottom: 25px;
+  font-size: 32px;
+  letter-spacing: 1px;
+}
+
+/* TABLE CONTAINER */
+.table-container {
+  overflow-x: auto;
+}
+
+/* TABLE */
+table {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* HEADER */
+thead {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+th {
+  padding: 15px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* CELLS */
+td {
+  padding: 14px;
+  font-size: 14px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+/* ROW HOVER */
+tr:hover {
+  background: rgba(255,255,255,0.08);
+  transition: 0.3s;
+}
+
+/* FIRST COLUMN STYLE */
+td:first-child {
+  font-weight: bold;
+  color: #ffd369;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  table {
+    font-size: 12px;
+  }
+}
